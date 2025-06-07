@@ -1,6 +1,8 @@
-# 💻 Laptop Price Predictor - Machine Learning Project
+# 💻 Laptop Price Predictor - Machine Learning Project with Web App
 
-This project is a machine learning-based **Laptop Price Predictor** built using Python. The model estimates the price of a laptop based on various user-selected specifications such as RAM, CPU type, brand, screen features, and more.
+This project is a machine learning based **Laptop Price Predictor** with a **web application** frontend built using **Flask**. The model predicts laptop prices based on user selected specifications such as RAM, CPU type, GPU type, brand, screen features and more.
+
+---
 
 ## 📌 Project Overview
 
@@ -11,6 +13,12 @@ This project is a machine learning-based **Laptop Price Predictor** built using 
   - Normalization and encoding
   - Model building & evaluation
   - Hyperparameter tuning
+- 🌐 Web Application:
+  - Developed using **Flask** for backend
+  - Frontend includes `index.html` and `styles.css`
+  - Users interact via a web form to input laptop features and get price predictions
+
+---
 
 ## 🧠 Models Implemented
 
@@ -20,57 +28,52 @@ The following regression models were trained and compared:
 - 🔹 **Decision Tree Regressor**
 - 🔹 **Random Forest Regressor** ✅ *(Best Accuracy)*
 
-➡️ The **Random Forest Regressor** gave the best performance and was selected as the final model.
+➡️ The **Random Forest Regressor** gave the best performance and was selected as the final model. It is 82%
 
-## ⚙️ Steps Followed
+---
+
+## ⚙️ Steps Followed for Model Building
 
 1. **Dataset Loading**  
    - Downloaded the CSV dataset from Kaggle  
    - Loaded it using `pandas.read_csv()`
 
-2. **Library Installation**  
-   - Required libraries: `numpy`, `pandas`, `scikit-learn`
+2. **Library Installation & Setup**  
+   - Created and activated a virtual environment  
+   - Installed required libraries: `numpy`, `pandas`, `scikit-learn`, `flask`
 
 3. **Data Preprocessing**
-   - Handled mixed-type and messy data (e.g., CPU, GPU, screen resolution)
-   - Extracted useful features like:
-     - Touchscreen (binary)
-     - IPS Display (binary)
-     - Screen Size in inches
-     - Pixel density (PPI)
-     - Weight in kg
-   - Encoded categorical variables (like Brand, CPU, etc.)
+   - Handled mixed type and messy data (CPU, GPU, screen resolution, etc.)
+   - Extracted features such as Touchscreen, IPS Display, Screen Size...
+   - Encoded categorical variables 
 
 4. **Feature Scaling & Normalization**
-   - Applied normalization and encoding techniques to prepare data for training
+   - Applied normalization and encoding techniques
 
-5. **Model Training**
-   - Trained multiple models
-   - Evaluated each using R² score
+5. **Model Training & Selection**
+   - Trained Linear Regression, LASSO, Decision Tree, and Random Forest models
+   - Selected Random Forest based on highest accuracy
+   - Performed hyperparameter tuning using GridSearchCV
 
-6. **Model Selection & Tuning**
-   - Chose **Random Forest Regressor** based on highest accuracy
-   - Applied **GridSearchCV** for hyperparameter tuning
+6. **Model Exporting**
+   - Saved the final model as a `.pkl` file using `joblib`
 
-7. **Model Exporting**
-   - Final model saved as `.pkl` file using `joblib`
-   - Ready for deployment or integration with UI
+---
 
-## 🧾 User Inputs (for prediction)
+## 🌐 Web Application Details
 
-The model takes the following laptop features as input:
-- ✅ RAM Size
-- ✅ CPU Brand/Model
-- ✅ Storage (HDD/SSD)
-- ✅ Touchscreen (Yes/No)
-- ✅ IPS Display (Yes/No)
-- ✅ Screen Resolution
-- ✅ Laptop Brand
-- ✅ Laptop Weight
+- Backend built with **Flask** (`app.py`)
+- Frontend includes:
+  - `index.html` (web form for user input)
+  - `styles.css` (styling for UI)
+- Users select laptop specifications such as Brand, RAM, Weight, Screen Type, CPU, etc.
+- On submitting, the app predicts and displays the laptop price
 
-Based on these features, the model predicts the **price of the laptop** in euros or can be converted to other currencies (e.g., LKR).
+---
 
-## 🖥️ Sample Prediction Output
+## 🚀 How to Run the Web Application
 
-```python
-Price in LKR : 716154.12
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/UdaraChamidu/laptop-price-predictor.git
+   cd laptop-price-predictor
