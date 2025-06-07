@@ -76,4 +76,19 @@ The following regression models were trained and compared:
 1. **Clone the repository:**
    ```bash
    git clone https://github.com/UdaraChamidu/laptop-price-predictor.git
-   cd laptop-price-predictor
+   cd Laptop-Price-Predictor
+
+---
+
+
+
+## 🖥️ Web Form Interface
+
+![image](https://github.com/user-attachments/assets/f48ea3e4-ede3-487f-b380-beff05b12229)
+
+![image](https://github.com/user-attachments/assets/159227d9-e2b8-434f-9dfe-483db504ee3f)
+
+---
+
+
+
