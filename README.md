@@ -77,18 +77,19 @@ The following regression models were trained and compared:
    ```bash
    git clone https://github.com/UdaraChamidu/laptop-price-predictor.git
    cd Laptop-Price-Predictor
-
+2. **Open the web application folder and run:**
+   ```bash
+   python app.py
+   
 ---
-
-
 
 ## 🖥️ Web Form Interface
 
-![image](https://github.com/user-attachments/assets/f48ea3e4-ede3-487f-b380-beff05b12229)
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/f48ea3e4-ede3-487f-b380-beff05b12229" width="45%" />
+  <img src="https://github.com/user-attachments/assets/159227d9-e2b8-434f-9dfe-483db504ee3f" width="45%" />
+</p>
 
-![image](https://github.com/user-attachments/assets/159227d9-e2b8-434f-9dfe-483db504ee3f)
-
----
 
 
 
