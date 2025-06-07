@@ -79,6 +79,12 @@ The following regression models were trained and compared:
    cd Laptop-Price-Predictor
 2. **Open the web application folder and run:**
    ```bash
+   python -m venv venv
+
+   venv\Scripts\activate
+
+   pip install flask numpy
+
    python app.py
    
 ---
